@@ -58,7 +58,7 @@ After installed, it needs to be loaded somewhere in your global js:
 ```
   import yamlProperties from 'sugarcube-yaml-properties';
 
-  yamlProperties({ State, Story, $(document) });
+  yamlProperties({ State, Story, $document: $(document) });
 ```
 
 ## Further Improvements
