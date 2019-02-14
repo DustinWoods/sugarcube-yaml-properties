@@ -51,7 +51,7 @@ Watch out! A <<=_enemy>> appeared!
 This plugin fires and sets variables on `:passageinit`. When it's finished, it triggers `:passageinitproperties` with `passageProperties` passed as the first argument. This can be used for extending behavior.
 
 ## Installing and Loading
-If using npm with Tweego/Twee, you can simply install with `npm -i -S sugarcube-yaml-properties`.
+If using npm with Tweego/Twee, you can simply install with `npm i -S sugarcube-yaml-properties`.
 For Twine Desktop/Web... I'm not sure yet best approach for installing.
 
 After installed, it needs to be loaded somewhere in your global js:
