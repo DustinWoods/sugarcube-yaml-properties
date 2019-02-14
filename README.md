@@ -6,7 +6,7 @@ Building Twine stories, I found myself needing to set state variables based on t
 ## Example
 Let's say you want each passage that starts with "Chapter 1" to set the variable `$passageProperties.chapterName` to "The Beginning". Here's how this would look:
 
-''Twine Passages:''
+**Twine Passages:**
 ```
 ::Chapter 1
 !<<=$passageProperties.chapterName>>
@@ -21,7 +21,7 @@ The story continued... [[next->Chapter 2]]
 Now we're on Chapter 2 (and the variable says so too)
 ```
 
-''Proeprtie Passages (YAML):''
+**Proeprtie Passages (YAML):**
 ```
 ::properties: Chapter 1
 chapterName: The Beginning
@@ -30,7 +30,7 @@ chapterName: The Beginning
 chapterName: The Plot Thickens
 ```
 
-''What's Happening''
+**What's Happening**
 For every passage name that begins with "Chapter 1", the property passageProperties.chapterName will be set to "The Beginning", and for every passage that begins with "Chapter 2", the property passageProperties.chapterName will be set to "The Plot Thickens".
 
 ## Other Examples
@@ -62,11 +62,11 @@ After installed, it needs to be loaded somewhere in your global js:
 ```
 
 ## Further Improvements
-''Passage Name Matching''
+**Passage Name Matching**
 I don't entirely like the chapter-name matching. I want to either make this more flexible, give full regex support, or take advatage of passage tags.
 
-''State Object''
+**State Object**
 I don't like the state variables be stored in passageProperties. I would instead like this to be flatter. The reason it's not is because the state object passageProperties is empty by default. This intended behavior ensures that variables from prior passages don't carry over. If we want the same behavior with a flat structure, we need to avoid wiping other state variables.
 
-''Loading''
+**Loading**
 There may be a better standard for Twine/SugarCube modules.
